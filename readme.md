@@ -20,7 +20,7 @@ Para evitar que seu código receba atualizações automáticas do modulo, é pre
 
 ```hcl
 module "ip-groups" {
-  source    = "git::https://timbrasil@dev.azure.com/timbrasil/Projeto_IaC/_git/modulo-ip-group.git?ref=v1.0.0"
+  source    = "git::https://github.com/mgsj2006/azurerm-module-ip-group.git?ref=v0.1.0"
   ip_groups = {
     "grupo-1" = ["10.10.10.0/24", "10.10.20.0/24"]
     "grupo-2" = ["10.10.30.0/24", "10.10.40.0/24"]
